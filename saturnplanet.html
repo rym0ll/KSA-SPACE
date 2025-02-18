@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn Planet</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/sstyle.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar nav-2">
+            <section class="flex">
+                <div id="menu-btn" class="fas fa-bars"></div>
+    
+                <div class="menu">
+                    <ul >
+                        <li><a href=" #">Account<i class="fas fa-angle-down" style="margin-right: 10px;"></i></a>
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a>
+                            </ul>
+                        </li>
+                        <li><a href="#">Planets<i class="fas fa-angle-down" style="margin-right: 10px;"></i></a>
+                        </li>
+                        <li><a href="#">Help<i class="fas fa-angle-down" style="margin-right: 10px;"></i></a>
+                            <ul>
+                                <li><a href="#">About Us</a></i></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="index.html" class="logo">KSA SPACE<i class="fa-solid fa-graduation-cap"
+                        style="margin-left: 10px;"></i></a>
+    
+            </section>
+        </nav>
+    
+    </header>
+    <!-- view property section starts  -->
+
+    <section class="view-property">
+
+        <h1 class="heading">About Saturn Planet</h1>
+        <div class="details" >
+            <div class="swiper images-container">
+                <div class="swiper-wrapper">
+                    <img src="images/saturn1.jpg" alt="" class="swiper-slide">
+                    <img src="images/saturn2.jpg" alt="" class="swiper-slide">
+                    <img src="images/saturn3.jpg" alt="" class="swiper-slide">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <h3 class="title">Description</h3>
+            <p class="description">Saturn is the sixth planet from the Sun and is well-known for its stunning ring system, 
+                made up of ice and rock particles. It is a gas giant with a diameter of about 116,460 kilometers (72,366 miles),
+                 making it the second-largest planet in the Solar System. Saturn primarily consists of hydrogen and helium and has a
+                  very low density, meaning it could float in water. The planet has at least 82 moons, with Titan being the largest, known for its thick atmosphere and lakes of liquid methane. Saturn's beautiful rings and unique characteristics make it a fascinating subject of study in astronomy.
+                </p>
+        </div>
+
+    </section>
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+    <section class="flex">
+
+        <div class="box">
+            <a href="index.html"><span>home</span></a>
+            <a href="#"><span>about</span></a>
+        </div>
+
+        <div class="box">
+            <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+            <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+    </section>
+    <div class="credit">&copy; copyright @ 2025 by Reema | all rights reserved!
+    </div>
+
+</footer>
+
+<!-- footer section ends -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+    var swiper = new Swiper(".images-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 3,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+    </script>
+</body>
+
+</html>
